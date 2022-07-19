@@ -1,0 +1,39 @@
+.root {
+  position: relative;
+  left: -160px;
+}
+
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  width: 250px;
+  border-radius: 7px;
+  padding-left: 35px;
+  padding-right: 27px;
+  //   transition: all 0.15s ease-in-out;
+
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    // width: 400px;
+  }
+}
+
+.searchIcon {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 19px;
+  height: 19px;
+  opacity: 0.2;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  width: 19px;
+  margin-left: 5px;
+  height: 19px;
+  position: absolute;
+  right: 7px;
+  top: 11px;
+  opacity: 0.2;
+}
