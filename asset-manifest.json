@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tawerx/todo-list/static/css/main.e4cfd80a.css",
+    "main.js": "/tawerx/todo-list/static/js/main.04ba47f6.js",
+    "static/media/empty-cart.png": "/tawerx/todo-list/static/media/empty-cart.db905d1f4b063162f25b.png",
+    "static/media/pizza-logo.svg": "/tawerx/todo-list/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg",
+    "index.html": "/tawerx/todo-list/index.html",
+    "main.e4cfd80a.css.map": "/tawerx/todo-list/static/css/main.e4cfd80a.css.map",
+    "main.04ba47f6.js.map": "/tawerx/todo-list/static/js/main.04ba47f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4cfd80a.css",
+    "static/js/main.04ba47f6.js"
+  ]
+}
