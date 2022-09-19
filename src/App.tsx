@@ -11,7 +11,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
-        <Route path="" element={<Home />} />
+        <Route path="react-pizza" element={<Home />} />
         <Route path="cart" element={<Cart />} />
         <Route path="pizza/:pizzaId" element={<FullPizza />} />
         <Route path="*" element={<NotFoundPage />} />
