@@ -1,5 +1,5 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
 export type Pizza = {
   category: number;
@@ -26,13 +26,13 @@ interface PizzaSliceState {
 }
 
 export const fetchingPizza = createAsyncThunk<Pizza[], FetchParametrs>(
-  'pizza/fetchPizza',
+  "pizza/fetchPizza",
   async ({ categoryIs, search, pageUrl, sortUrl, orderUrl }) => {
     const { data } = await axios.get<Pizza[]>(
-      `https://62a3b22b5bd3609cee6ec0c3.mockapi.io/items?${pageUrl}&limit=4&${search}${categoryIs}&${sortUrl}&${orderUrl}`,
+      `https://66bb41ef6a4ab5edd637c568.mockapi.io/items/pizzas?${pageUrl}&limit=4&${search}${categoryIs}&${sortUrl}&${orderUrl}`
     );
     return data;
-  },
+  }
 );
 
 const initialState: PizzaSliceState = {
@@ -41,7 +41,7 @@ const initialState: PizzaSliceState = {
 };
 
 const pizzaSlice = createSlice({
-  name: 'pizza',
+  name: "pizza",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
